@@ -23,10 +23,10 @@ with open('tp.csv', 'r') as f:
         csv.append(line.split(' '))
     for line in csv:
         one.append(line[2])
-    x = set(one)
+    x = sorted(set(one))
     for line in x:
         print(line)
-        
+
 with open('tp.csv', 'r') as f:
     print('---------------------')
     gn = input('請輸入 Group_name: ')
